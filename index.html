@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/img">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="player">
+        <!--Dashboard-->
+        <div class="dashboard">
+            <!--Header-->
+            <header>
+                <h4>Now playing:</h4>
+                <h2>String 57th & 9th</h2>
+            </header>
+
+            <!--CD-->
+            <div class="cd">
+                <div class="cd-thumb">
+                    <!---->
+                </div>
+            </div>
+
+            <!--Control-->
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause icon-pause"></i>
+                    <i class="fas fa-play icon-play"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fas fa-step-forward"></i>
+                </div>
+                <!-- <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div> -->
+                <div class="btn-box">
+                    <div class="btn btn-random">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="volume-box">
+                        <i class="fa-solid fa-volume-high icon-volume"></i>
+                        <input type="range" id="volume" class="volume" value="0" step="10" min="0" max="100" id="">
+                    </div>
+                </div>
+            </div>
+            <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+
+            <audio src="" id="audio"></audio>
+        </div>
+        <!--Playlist-->
+        <div class="playlist">
+            <!-- <div class="song">
+                <div class="thumb"style="background-image:url('https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3ee7fe46939353.5a59ad3a6d13f.jpg')">
+                </div>
+                <div class="body">
+                    <h3 class="title">Tên bài hát</h3>
+                    <p class="author">Ca sĩ / nhóm nhạc</p>
+                </div>
+                <div class="option">
+                    <i class="fa-ellipsis-h"></i>
+                </div>
+            </div> -->
+
+        </div>
+
+        <div class="add_Song">
+            <i class="icon fa-soild fa-plus"></i>
+        </div>
+    
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
